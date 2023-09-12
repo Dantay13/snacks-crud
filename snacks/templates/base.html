@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks CRUD</title>
+    <!-- Add any other meta tags, stylesheets, or head content here -->
+</head>
+<body>
+    <header>
+        <h1>Snacks CRUD Application</h1>
+        <nav>
+            <a href="{% url 'snack_list' %}">Home</a>
+            <a href="{% url 'snack_create' %}">Add Snack</a>
+            <!-- Add other navigation links as needed -->
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- This block will be overridden by child templates -->
+        {% endblock content %}
+    </main>
+
+    <footer>
+        <p>Snacks CRUD &copy; 2023</p>
+    </footer>
+</body>
+</html>
